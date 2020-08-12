@@ -1,0 +1,33 @@
+body {
+  border-style: solid;
+  border-collapse: collapse;
+  border-radius: 20px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+Header {
+  color: black;
+  padding-bottom: 50px;
+  font-size: 55px;
+}
+
+form {
+  font-size: 20px;
+  color: black;
+
+}
+
+a{
+color: black;
+font-size: 30px;
+}
+#InsultResult{
+  padding-top: 10%;
+}

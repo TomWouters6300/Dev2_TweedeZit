@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+
+    <header id="Header">Insult Generator</header>
+    <form>
+      
+        <input type="checkbox" id="Name" name="Name" value="Name">
+        <label for="Name"> Name</label><br>
+
+
+        <select id="BigInsult">
+            <option value="king" id="2">King</option>
+            <option value="linus" id="2">Linus</option>
+            <option value="shakespeare" id="2">shakespeare</option>
+            <option style="display: none;" value="donut" id="2">donut</option>
+            <option value="chainsaw" id="2">chainsaw</option>
+            <option value="off" id="2">fuck off</option>
+            <option value="you" id="2">fuck you</option>
+        </select>
+
+        <select id="LilInsult">
+
+            <option value="everyone" id="1">fuck everyone</option>
+            <option value="everything" id="1">fuck everything</option>
+            <option value="that" id="1">fuck that</option>
+            <option value="this" id="1">fuck this</option>
+            <option value="life" id="1">fuck my life</option>
+            <option value="thanks" id="1">fuck you very much</option>
+            <option value="pink" id="1">fuck me pink</option>
+
+        </select> <br> <br>
+
+        <label for="from">from</label>
+        <input type="text" name="from" id="from">
+        <label for="to">to</label>
+        <input type="text" name="to" id="to">
+        <input type="submit" name="submit" id="submit">
+    </form>
+    <div id="InsultResult"></div>
+
+</body>
+<script type="module" src="Hoofdtaak.js"></script>
+
+</html>
