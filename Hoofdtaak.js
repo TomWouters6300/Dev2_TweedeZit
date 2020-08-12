@@ -13,8 +13,6 @@ var htmlString;
 var Title;
 
 
-
-
 document.getElementById("submit").addEventListener("click", function (event) {
   event.preventDefault()
   fromVal = from.value;
@@ -29,13 +27,13 @@ checkbox.addEventListener("change", function () {
     LilInsult.style.display = "none";
     to.style.display = "inline-block";
     Title = BigInsult.value;
-
+    
   } else {
     BigInsult.style.display = "none";
     LilInsult.style.display = "inline-block";
     to.style.display = "none";
     Title = LilInsult.value;
-
+    
   }
 })
 
@@ -45,3 +43,11 @@ LilInsult.addEventListener("change", function () {
 BigInsult.addEventListener("change", function () {
   Title = BigInsult.value
 })
+
+const database = firebase.firestore();
+const insultCollection = database.collection("thisInsult");
+
+firebase.initializeApp({
+  apiKey: 'AIzaSyDXfOI6eNE3vI58BMYq4Las_Fc1NjUOhnE',
+  projectId: 'insult-generator-24a79'
+});

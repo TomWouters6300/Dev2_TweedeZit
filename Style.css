@@ -1,6 +1,8 @@
+
+
 body {
-  border-style: solid;
-  border-collapse: collapse;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 20px;
   padding-bottom: 50px;
   padding-top: 40px;
@@ -8,19 +10,20 @@ body {
   text-align: center;
   margin: auto;
   margin-top: 5%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
 }
 
 Header {
-  color: black;
-  padding-bottom: 50px;
-  font-size: 55px;
+
+  color: white;
+  padding-bottom: 0px;
+  font-size: 50px;
+  
 }
 
 form {
   font-size: 20px;
-  color: black;
+  color: white;
 
 }
 
@@ -31,3 +34,5 @@ font-size: 30px;
 #InsultResult{
   padding-top: 10%;
 }
+
+
