@@ -51,3 +51,13 @@ firebase.initializeApp({
   apiKey: 'AIzaSyDXfOI6eNE3vI58BMYq4Las_Fc1NjUOhnE',
   projectId: 'insult-generator-24a79'
 });
+
+class pushData{
+  constructor(){
+
+  }
+  dataPush(){
+    insultCollection.push(result)
+  }
+}
+var myInsult = new pushData();

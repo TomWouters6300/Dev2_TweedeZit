@@ -1,29 +1,20 @@
 
-
 body {
-
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 20px;
-  padding-bottom: 50px;
-  padding-top: 40px;
-  width: 50%;
   text-align: center;
   margin: auto;
-  margin-top: 5%;
-  background-color: black;
+  background-color: white;
 }
 
 Header {
-
-  color: white;
+  color: black;
   padding-bottom: 0px;
   font-size: 50px;
-  
 }
 
 form {
   font-size: 20px;
-  color: white;
+  color: black;
 
 }
 
@@ -32,7 +23,23 @@ color: black;
 font-size: 30px;
 }
 #InsultResult{
-  padding-top: 10%;
+  color: black;
+  padding-top: 5%;
+}
+#topBlock{
+  background: rgb(0,0,0);
+  background: linear-gradient(rgba(0,0,0,2) 20%, rgba(3,3,3,1) 20%, rgba(255,255,255,1) 70%);
+  height: 150px;
+  width: 100%;
+  margin-bottom: 10%;
+ 
+}
+#bottomBlock{
+  background: rgb(0,0,0);
+background: linear-gradient(360deg, rgba(0,0,0,2) 20%, rgba(3,3,3,1) 20%, rgba(255,255,255,1) 70%);
+  height: 200px;
+  width: 100%;
+  margin-top: 10%;
 }
 
 
