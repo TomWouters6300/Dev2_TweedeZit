@@ -1,4 +1,3 @@
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -6,10 +5,17 @@ body {
   background-color: white;
 }
 
-Header {
-  color: black;
-  padding-bottom: 0px;
-  font-size: 50px;
+#topBlock {
+  background: rgb(0, 0, 0);
+  color: white;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 5%;
+
+}
+#topBlock Header{
+  font-size: 55px;
+  padding-top: 2%;
 }
 
 form {
@@ -18,28 +24,39 @@ form {
 
 }
 
-a{
-color: black;
-font-size: 30px;
+.icon {
+  width: 2%;
 }
-#InsultResult{
+
+a {
   color: black;
-  padding-top: 5%;
+  font-size: 30px;
 }
-#topBlock{
-  background: rgb(0,0,0);
-  background: linear-gradient(rgba(0,0,0,2) 20%, rgba(3,3,3,1) 20%, rgba(255,255,255,1) 70%);
-  height: 150px;
-  width: 100%;
-  margin-bottom: 10%;
- 
+#nameBox #Name{
+  font-size: 20px;
 }
-#bottomBlock{
-  background: rgb(0,0,0);
-background: linear-gradient(360deg, rgba(0,0,0,2) 20%, rgba(3,3,3,1) 20%, rgba(255,255,255,1) 70%);
+#InsultResult {
+  color: black;
+  padding-top: 2%;
+}
+
+
+
+#bottomBlock {
+  background: rgb(0, 0, 0);
   height: 200px;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 2%;
 }
 
+#BigInsult {
+  display: none;
+}
 
+#to {
+  display: none;
+}
+
+#toText {
+  display: none;
+}

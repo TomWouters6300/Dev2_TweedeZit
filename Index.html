@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="Style.css">
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+
+
     <title>Insult Generator</title>
-    
+
 </head>
 
 
 <body>
-    <div id="topBlock"></div>
-<header id="Header">Insult Generator</header>
+    <div id="topBlock"><header id="Header">Insult Generator</header></div>
+    
 
     <form>
         <div id="nameBox"><input type="checkbox" id="Name" name="Name" value="Name">
@@ -44,14 +46,17 @@
 
         </select> <br> <br>
 
-        <label for="from">to</label>
+        <label for="from" id="fromText">from</label>
         <input type="text" name="from" id="from">
-        <label for="to">from</label>
+        <label for="to" id="toText">to</label>
         <input type="text" name="to" id="to">
         <input type="submit" name="submit" id="submit">
     </form>
     <div id="InsultResult"></div>
-
+    <h1>Messages:</h1>
+    <div id="message">
+      
+    </div>
 </body>
 <footer id="bottomBlock"></footer>
 <script type="module" src="Hoofdtaak.js"></script>
