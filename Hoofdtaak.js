@@ -12,6 +12,7 @@ var toVal;
 var htmlString;
 var Title;
 
+//getting api and implementing it in html//
 
 document.getElementById("submit").addEventListener("click", function (event) {
   event.preventDefault()
@@ -21,28 +22,53 @@ document.getElementById("submit").addEventListener("click", function (event) {
   htmlString = `<a href="https://foaas.com/${Title}/${fromVal}/${toVal}">Here's your insult</a>`;
   result.innerHTML = htmlString;
 })
-checkbox.addEventListener("change", function () {
-  if (this.checked) {
-    BigInsult.style.display = "inline-block";
-    LilInsult.style.display = "none";
-    to.style.display = "inline-block";
-    Title = BigInsult.value;
-    
-  } else {
-    BigInsult.style.display = "none";
-    LilInsult.style.display = "inline-block";
-    to.style.display = "none";
-    Title = LilInsult.value;
-    
-  }
-})
 
-LilInsult.addEventListener("change", function () {
-  Title = LilInsult.value
-})
-BigInsult.addEventListener("change", function () {
-  Title = BigInsult.value
-})
+//checkbox to toggle insult with 1 or 2 names//
+
+class Insults {
+  constructor() {
+    this.check();
+  }
+  check() {
+    checkbox.addEventListener("change", function () {
+      if (this.checked) {
+        BigInsult.style.display = "inline-block";
+        LilInsult.style.display = "none";
+        to.style.display = "inline-block";
+        Title = BigInsult.value;
+        
+      } else {
+        BigInsult.style.display = "none";
+        LilInsult.style.display = "inline-block";
+        to.style.display = "none";
+        Title = LilInsult.value;
+      }
+    })
+  }
+}
+var myInsult = new Insults();
+
+//gets titel value for insult//
+
+class InsultValue {
+  constructor() {
+    this.value();
+  }
+  value() {
+    LilInsult.addEventListener("change", function () {
+      Title = LilInsult.value
+    })
+    BigInsult.addEventListener("change", function () {
+      Title = BigInsult.value
+    })
+  }
+
+}
+var value = new InsultValue();
+
+
+//firebase//
+
 
 const database = firebase.firestore();
 const insultCollection = database.collection("thisInsult");
@@ -52,12 +78,11 @@ firebase.initializeApp({
   projectId: 'insult-generator-24a79'
 });
 
-class pushData{
-  constructor(){
+class pushData {
+  constructor() {
 
   }
-  dataPush(){
+  dataPush() {
     insultCollection.push(result)
   }
 }
-var myInsult = new pushData();
