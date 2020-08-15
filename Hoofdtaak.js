@@ -15,10 +15,13 @@ class Insults {
     this.to = document.getElementById("to");
     this.result = document.getElementById("InsultResult");
     this.addEventListener();
+    
+   
   }
   addEventListener() {
     this.checkbox.addEventListener("change", this.ImproviseAdaptOvercome.bind(this));
     document.getElementById("submit").addEventListener("click", this.Showresult.bind(this));
+    document.getElementById('generate').addEventListener('click',this.randomResult);
   }
 
   ImproviseAdaptOvercome() {
@@ -58,6 +61,13 @@ class Insults {
     this.result.innerHTML = this.htmlString;
 
   }
+  async randomResult(){
+     var response = await fetch(`https://www.tronalddump.io/search/quote?query=anyone`);
+     var randomData = await response.json();
+     var randomInsult= randomData._embedded.quotes[Math.floor(Math.random() * (randomData._embedded.quotes.length -1 - 0 + 1) + 0)].value
+     document.getElementById('randomResult').innerHTML=`<p>${randomInsult}</p>`
+  }
+  
 }
 
 
@@ -107,6 +117,7 @@ class Firebase {
 const Database = new Firebase('AIzaSyDXfOI6eNE3vI58BMYq4Las_Fc1NjUOhnE', 'insult-generator-24a79');
 const myInsult = new Insults();
 
+//load message from firebase//
 
 class Messages {
   constructor(from, title, counter, to) {
