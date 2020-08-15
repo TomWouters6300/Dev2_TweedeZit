@@ -6,47 +6,37 @@ body {
 }
 
 #topBlock {
-  background: rgb(0, 0, 0);
+  background: black;
   color: white;
   height: 150px;
   width: 100%;
-  margin-bottom: 5%;
 
 }
-#topBlock Header{
-  font-size: 55px;
+
+#topBlock Header {
+  font-size: 70px;
   padding-top: 2%;
 }
 
 form {
   font-size: 20px;
-  color: black;
+  color: white;
 
 }
 
 .icon {
-  width: 2%;
+  width: 4%;
+  opacity: 80%;
 }
 
-a {
-  color: black;
-  font-size: 30px;
+.icon:hover {
+  opacity: 100%;
 }
-#nameBox #Name{
-  font-size: 20px;
-}
-#InsultResult {
-  color: black;
-  padding-top: 2%;
-}
-
-
 
 #bottomBlock {
   background: rgb(0, 0, 0);
   height: 200px;
   width: 100%;
-  margin-top: 2%;
 }
 
 #BigInsult {
@@ -59,4 +49,117 @@ a {
 
 #toText {
   display: none;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+#gnr {
+  background-color: #242424;
+  color: white;
+  padding: 7vh 1vh;
+}
+
+input[type=text] {
+  width: 20vw;
+  border: none;
+  border-bottom: 0.1px solid #4f4f4f;
+  background-color: #242424;
+  color: white;
+  padding: 16px 20px;
+}
+
+input[type=text]:focus {
+  border-bottom: 1px solid white;
+  transition: 0.4s ease-in-out;
+  padding: 16px 20px;
+  outline: none;
+}
+
+select {
+  width: 25vw;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4f4f4f;
+  color: white;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+#generate {
+  background-color: #4f4f4f;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 20px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+#generate:hover {
+  background-color: black;
+  padding: 16px 32px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#msgs {
+  padding-top: 1vh;
+  background-color: black;
+  color: white;
+}
+
+#ins, #insultResult{
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+#InsultResult:hover {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+#insultLink {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+#insultLink:hover {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+#message {
+  background-color: black;
+  padding: 1vh 1vh;
+  color: white;
+}
+
+#msglil,
+#msgbig {
+  background-color: #242424;
+  padding: 2vh 2vh;
+  margin: 25px 20vw;
+  border-radius: 25px;
+
+}
+
+a {
+  font-size: 35px;
+  color: #4f4f4f;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: white;
 }

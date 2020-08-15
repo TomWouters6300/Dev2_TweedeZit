@@ -9,55 +9,62 @@
     <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
 
 
+
     <title>Insult Generator</title>
 
 </head>
 
 
 <body>
-    <div id="topBlock"><header id="Header">Insult Generator</header></div>
-    
+    <div id="topBlock">
+        <header id="Header">Insult Generator</header>
+    </div>
 
-    <form>
-        <div id="nameBox"><input type="checkbox" id="Name" name="Name" value="Name">
-            <label for="Name"> Name</label><br></div>
+    <div id="gnr">
+        <form>
+            <div id="nameBox"><input type="checkbox" id="Name" name="Name" value="Name">
+                <label for="Name"> Name</label><br><br></div>
 
 
 
-        <select id="BigInsult">
-            <option value="king" id="2">King</option>
-            <option value="linus" id="2">Linus</option>
-            <option value="shakespeare" id="2">shakespeare</option>
-            <option style="display: none;" value="donut" id="2">donut</option>
-            <option value="chainsaw" id="2">chainsaw</option>
-            <option value="off" id="2">fuck off</option>
-            <option value="you" id="2">fuck you</option>
-        </select>
+            <select id="BigInsult">
+                <option value="king" id="2">King</option>
+                <option value="linus" id="2">Linus</option>
+                <option value="shakespeare" id="2">shakespeare</option>
+                <option style="display: none;" value="donut" id="2">donut</option>
+                <option value="chainsaw" id="2">chainsaw</option>
+                <option value="off" id="2">fuck off</option>
+                <option value="you" id="2">fuck you</option>
+            </select>
 
-        <select id="LilInsult">
+            <select id="LilInsult">
 
-            <option value="everyone" id="1">fuck everyone</option>
-            <option value="everything" id="1">fuck everything</option>
-            <option value="that" id="1">fuck that</option>
-            <option value="this" id="1">fuck this</option>
-            <option value="life" id="1">fuck my life</option>
-            <option value="thanks" id="1">fuck you very much</option>
-            <option value="pink" id="1">fuck me pink</option>
+                <option value="everyone" id="1">fuck everyone</option>
+                <option value="everything" id="1">fuck everything</option>
+                <option value="that" id="1">fuck that</option>
+                <option value="this" id="1">fuck this</option>
+                <option value="life" id="1">fuck my life</option>
+                <option value="thanks" id="1">fuck you very much</option>
+                <option value="pink" id="1">fuck me pink</option>
 
-        </select> <br> <br>
+            </select> <br> <br>
 
-        <label for="from" id="fromText">from</label>
-        <input type="text" name="from" id="from">
-        <label for="to" id="toText">to</label>
-        <input type="text" name="to" id="to">
-        <input type="submit" name="submit" id="submit">
-    </form>
-    <button type="button" name="Generate" id="generate">Generate random</button>
-    <div id='randomResult'></div>
-    <div id="InsultResult"></div>
-    <h1>Messages:</h1>
-    <div id="message">
-      
+            <label for="from" id="fromText">from</label>
+            <input type="text" name="from" id="from">
+            <label for="to" id="toText">to</label>
+            <input type="text" name="to" id="to">
+            <input type="submit" name="submit" id="submit">
+        </form>
+        <div id="InsultResult"></div>
+        <button type="button" name="Generate" id="generate">Generate random Trump insult</button>
+        <div id='randomResult'></div>
+        
+    </div>
+    <div id="msgs">
+        <h1>Messages</h1>
+        <div id="message">
+
+        </div>
     </div>
 </body>
 <footer id="bottomBlock"></footer>
